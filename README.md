@@ -1,7 +1,7 @@
 faker-instrument-names [![Build Status](https://travis-ci.org/etelford/faker-instrument-names.svg?branch=master)](https://travis-ci.org/etelford/faker-instrument-names)
 =========
 
-Create fake Instrument names with the help of [fzaninotto/Faker](https://github.com/fzaninotto/Faker).
+Generate random instrument names with the help of [fzaninotto/Faker](https://github.com/fzaninotto/Faker).
 
 Names of instruments were pulled and parsed from [MusicBrainz](https://musicbrainz.org/instruments).
 
