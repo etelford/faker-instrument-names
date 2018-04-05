@@ -8,7 +8,7 @@ class InstrumentFakerTest extends \PHPUnit\Framework\TestCase
 	public function setUp()
 	{
 		$this->faker = Faker::create();
-		
+
 		$instrumentFaker = new InstrumentFaker($this->faker);
 		$this->faker->addProvider($instrumentFaker);
 
@@ -22,6 +22,14 @@ class InstrumentFakerTest extends \PHPUnit\Framework\TestCase
 
 		$this->assertTrue($this->findInstrument($generatedInstrument));
 	}
+
+    /** @test */
+    public function it_generates_a_random_common_instument_name()
+    {
+        $instrument = $this->faker->commonInstrument;
+
+        $this->assertTrue(in_array($instrument, InstrumentFaker::$instruments['common']));
+    }
 
 	/** @test */
 	public function it_generates_a_random_wind_instument_name()
